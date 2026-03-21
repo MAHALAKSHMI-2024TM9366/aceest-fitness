@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>Summary</title>
 </head>
 <body>
+    <div class="container">
+        <h2>Client Summary</h2>
 
-<h2>Client Summary</h2>
-
-{% if client %}
-    <p>Name: {{ client.name }}</p>
-    <p>Age: {{ client.age }}</p>
-    <p>Weight: {{ client.weight }}</p>
-    <p>Program: {{ client.program }}</p>
-{% else %}
-    <p>No client found</p>
-{% endif %}
-
+        {% if client %}
+            <p><b>Name:</b> {{ client.name }}</p>
+            <p><b>Age:</b> {{ client.age }}</p>
+            <p><b>Weight:</b> {{ client.weight }}</p>
+            <p><b>Program:</b> {{ client.program }}</p>
+        {% endif %}
+    </div>
 </body>
 </html>
