@@ -3,7 +3,8 @@
 ## 📌 Project Overview
 
 ACEest Fitness & Gym Management System is a Flask-based web application designed to manage gym clients, track fitness programs, and monitor user progress.
-This project demonstrates core **DevOps practices** such as CI/CD, containerization, and automated testing.
+
+This project demonstrates modern **DevOps practices** including CI/CD pipelines, containerization, automated testing, and structured Git workflows.
 
 ---
 
@@ -16,14 +17,24 @@ This project demonstrates core **DevOps practices** such as CI/CD, containerizat
   * Fat Loss
   * Muscle Gain
   * Beginner
+* Responsive and clean UI using CSS
 * Simple and user-friendly web interface
+
+---
+
+## 🎨 UI Enhancement
+
+* Custom CSS styling added for better user experience
+* Centered layout with card design
+* Styled buttons and form inputs
+* Improved readability and visual appearance
 
 ---
 
 ## 🛠️ Tech Stack
 
 * **Backend:** Python (Flask)
-* **Frontend:** HTML
+* **Frontend:** HTML, CSS
 * **Testing:** Pytest
 * **Containerization:** Docker
 * **CI/CD:** GitHub Actions, Jenkins
@@ -40,6 +51,8 @@ aceest-fitness/
 ├── requirements.txt
 ├── Dockerfile
 ├── README.md
+├── static/
+│   └── style.css
 ├── templates/
 │   ├── index.html
 │   ├── client.html
@@ -116,39 +129,37 @@ http://localhost:5000
 
 ### 🔹 GitHub Actions
 
-* Automatically triggers on **push** and **pull requests**
+* Automatically runs on push and pull requests
 * Installs dependencies
-* Runs automated tests using Pytest
+* Executes Pytest
 
 ### 🔹 Jenkins
 
 * Pulls code from GitHub repository
 * Installs dependencies
-* Runs test cases using Pytest
-* Can be configured to trigger builds automatically (Poll SCM)
+* Runs tests using Pytest
+* Configured with Poll SCM for automatic builds
 
 ---
 
 ## 🔀 Git Workflow
 
-* Used **feature branches** for each development step:
+* Followed **feature branch strategy**:
 
-  * feature/step-1-flask
-  * feature/step-2-tests
-  * feature/step-3-docker
-  * feature/step-4-github-actions
-  * feature/step-5-jenkins
-* Merged into `main` branch via commits / pull requests
+  * feature/tests
+  * feature/docker
+  * feature/githubworkflow
+  * feature/styles
+  * feature/readme
+* Each feature was developed independently and merged into `main`
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshots *(Add before submission)*
 
-*(Add these before submission)*
-
-* Flask application UI
-* Docker running container
-* GitHub Actions pipeline success
+* Flask UI (Styled)
+* Docker running app
+* GitHub Actions success
 * Jenkins build success
 
 ---
@@ -159,7 +170,7 @@ http://localhost:5000
 * Automated Testing
 * Containerization using Docker
 * CI/CD pipelines using GitHub Actions and Jenkins
-* Version control with Git
+* Git branching and pull request workflow
 
 ---
 
@@ -171,4 +182,4 @@ http://localhost:5000
 
 ## ✅ Conclusion
 
-This project successfully demonstrates how modern DevOps tools and practices can be integrated into a web application development lifecycle, ensuring automation, reliability, and scalability.
+This project successfully demonstrates how DevOps tools and practices can be integrated into application development, ensuring automation, consistency, and scalability.
