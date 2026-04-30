@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout Code') {
-            steps {
-                git 'https://github.com/MAHALAKSHMI-2024TM9366/aceest-fitness.git'
-            }
-        }
-
         stage('Install Dependencies') {
             steps {
                 sh '''
